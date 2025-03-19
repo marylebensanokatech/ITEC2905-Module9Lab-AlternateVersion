@@ -1,0 +1,126 @@
+/* Main styles for the recipe website */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    background-color: #4a6fa5;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #e6f0ff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #333;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4a6fa5;
+    text-decoration: none;
+}
+
+.recipe-card a:hover {
+    text-decoration: underline;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border-color: #4a6fa5;
+    box-shadow: 0 0 5px rgba(74, 111, 165, 0.2);
+}
+
+button {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3a5985;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #4a6fa5;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}

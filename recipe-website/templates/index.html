@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Recipe Collection{% endblock %}
+
+{% block content %}
+<h2>Our Recipes</h2>
+
+<div class="recipe-grid">
+    {% for recipe in recipes %}
+        <div class="recipe-card">
+            <h3>{{ recipe['name'] }}</h3>
+            <a href="{{ url_for('recipe', recipe_id=recipe['id']) }}">View Recipe</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
